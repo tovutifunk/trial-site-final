@@ -1,0 +1,68 @@
+.tov-trial-container {
+    width:100%;
+    height:100%;
+    margin: auto 0;
+    background-color: $white;
+}
+
+@media (min-width: 1200px) { 
+    .tov-trial-container {
+    background-image: url(../tov-theme/assets/tov-trial/bg--waves.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    }
+ }
+
+.tov-trial-wrapper {
+    position: relative;
+    max-width: 1400px;
+    /* padding: map-get($spacers, 5); */
+}
+
+.tov-trial-column {
+        width:100%;
+
+        .alert {
+            font-size:$font-size-base * .75;
+        }
+    }
+
+@media (min-width: 1200px) { 
+    .tov-trial-column {
+        width:50%;
+        }
+ }
+
+ .tov-trial-package {
+     width:50%;
+
+    li {
+        margin:10px 0;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+
+    .alert {
+        font-size:8px !important;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .tov-trial-package {
+        width:100% !important;
+        background-color: $gray-200;
+        background-image: url(../tov-theme/assets/tov-trial/bg--waves.png);
+        background-position: 30% 50%;
+        background-size: cover;
+    }
+
+ }
+
+.tov-trial-package.dark {
+    background-color: $dark !important;
+    background-image: url(../tov-theme/assets/tov-trial/bg--waves__dark.png);
+    background-position: 20% 50%;
+    color: $white !important;
+}
